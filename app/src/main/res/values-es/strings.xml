@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Essential</string>
+
+
+    <string name="auth_title">Essential</string>
+    <string name="auth_login_label">Usuario</string>
+    <string name="auth_login_or_email_label">Usuario / Correo</string>
+    <string name="auth_email_label">Correo</string>
+    <string name="auth_password_label">Contraseña</string>
+    <string name="auth_show_password">Mostrar contraseña</string>
+    <string name="auth_hide_password">Ocultar contraseña</string>
+    <string name="auth_sign_in">Iniciar sesión</string>
+    <string name="auth_register">Registrarse</string>
+    <string name="auth_submit_register">Crear cuenta</string>
+    <string name="auth_register_title">Crear una cuenta</string>
+    <string name="auth_back_to_login">Ya tengo una cuenta</string>
+    <string name="auth_forgot_password">¿Olvidaste la contraseña?</string>
+    <string name="auth_forgot_toast">La recuperación de contraseña estará disponible pronto</string>
+<string name="auth_reset_title">Restablecer contraseña</string>
+    <string name="auth_reset_identifier_hint">Introduce tu usuario o correo. Enviaremos un código de 6 dígitos al email de la cuenta.</string>
+    <string name="auth_reset_send_code">Enviar código</string>
+    <string name="auth_reset_code_sent_generic">Si la cuenta existe, el código se envió por correo</string>
+    <string name="auth_reset_password_title">Nueva contraseña</string>
+    <string name="auth_reset_password_subtitle">Para %1$s</string>
+    <string name="auth_reset_new_password">Nueva contraseña</string>
+    <string name="auth_reset_confirm_password">Repetir contraseña</string>
+    <string name="auth_reset_save_and_login">Guardar e iniciar sesión</string>
+    <string name="auth_reset_back_to_code">Volver al código</string>
+    <string name="auth_error_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="auth_error_reset_not_found">Solicita el código de nuevo</string>
+    <string name="home_drawer_account_guest">Sin autorizar</string>
+    <string name="home_drawer_account_default">Mi cuenta</string>
+    <string name="home_drawer_plan_free">Free plan</string>
+    <string name="home_drawer_plan_pro">Pro plan</string>
+    <string name="cd_open_settings">Ajustes</string>
+    <string name="settings_section_vault">Almacén</string>
+    <string name="settings_vault_current_label">Almacén actual</string>
+    <string name="settings_vault_not_set">No seleccionado</string>
+    <string name="settings_change_vault">Cambiar almacén</string>
+    <string name="settings_change_vault_title">Almacén de notas</string>
+    <string name="settings_change_vault_hint">Elige un almacén existente en el dispositivo o crea uno nuevo. Las notas permanecen en la carpeta de la app.</string>
+    <string name="settings_create_new_vault">Crear almacén nuevo</string>
+    <string name="settings_existing_vaults">En este dispositivo</string>
+    <string name="settings_no_vaults_yet">Aún no hay almacenes — crea el primero.</string>
+    <string name="settings_vault_current">En uso</string>
+    <string name="settings_toast_vault_changed">Almacén cambiado</string>
+    <string name="settings_section_quota">IA en la nube</string>
+    <string name="settings_quota_title">Cuota de tokens</string>
+    <string name="settings_quota_loading">Cargando cuota…</string>
+    <string name="settings_quota_error">No se pudo cargar el límite del servidor</string>
+    <string name="settings_quota_error_401">La sesión expiró. Cierra sesión y vuelve a entrar.</string>
+    <string name="settings_quota_error_404">El servidor está desactualizado (sin /api/me/account). Actualiza la API.</string>
+    <string name="settings_quota_error_http">Error del servidor (HTTP %1$d)</string>
+    <string name="settings_quota_error_network">Sin conexión al servidor. Comprueba internet y que la API sea accesible.</string>
+    <string name="settings_quota_dev_stub">Inicio local (debug): cuota del servidor no disponible</string>
+    <string name="settings_quota_cached_hint">Datos guardados. Pulsa «Reintentar» para actualizar.</string>
+    <string name="settings_quota_refresh_failed">No se pudo actualizar la cuota. Comprueba internet.</string>
+    <string name="settings_quota_retry">Reintentar</string>
+    <string name="settings_quota_unlimited">Sin límite</string>
+    <string name="settings_quota_daily_reset">El contador de tokens se reinicia cada día a las 0:00 (Moscú).</string>
+    <string name="settings_plan_compare_title">Diferencias entre planes</string>
+    <string name="settings_plan_free_title">Gratis</string>
+    <string name="settings_plan_pro_title">Pro</string>
+    <string name="settings_plan_pro_price">%1$d ₽/mes</string>
+    <string name="settings_plan_local_unlimited">Modelos locales sin límites</string>
+    <string name="settings_plan_cloud_daily">IA en la nube — %1$s al día</string>
+    <string name="settings_plan_quota_amount">%1$s tokens</string>
+    <string name="settings_subscription_payments_button">Historial de pagos</string>
+    <string name="settings_subscription_until">Pro hasta %1$s</string>
+    <string name="settings_subscription_forever">Pro para siempre</string>
+    <string name="settings_subscription_active_forever_hint">Suscripción Pro sin fecha de vencimiento.</string>
+    <string name="settings_subscription_active_hint">Suscripción activa. La renovación añade días al periodo actual.</string>
+    <string name="settings_subscription_payments_title">Historial de pagos</string>
+    <string name="settings_subscription_payments_empty">Aún no hay pagos</string>
+    <string name="settings_payment_status_confirmed">Pagado</string>
+    <string name="settings_payment_status_pending">Pendiente</string>
+    <string name="settings_payment_status_canceled">Cancelado</string>
+    <string name="settings_payment_status_failed">Error</string>
+    <string name="settings_payment_row">%1$s · %2$d ₽ · %3$s</string>
+    <string name="settings_subscription_offer">Essential Pro — %1$d ₽ al mes.</string>
+    <string name="settings_subscription_buy_button">Obtener Pro — %1$d ₽/mes</string>
+    <string name="settings_subscription_renew_button">Renovar Pro — %1$d ₽/mes</string>
+    <string name="settings_subscription_sign_in">Inicia sesión para suscribirte.</string>
+    <string name="settings_subscription_payment_opened">Se abrió la página de pago. Tras pagar, vuelve y pulsa Reintentar.</string>
+    <string name="settings_subscription_billing_unavailable">El pago no está configurado en el servidor. Añade las claves Platega al .env del API.</string>
+    <string name="settings_subscription_checkout_error">No se pudo crear la factura. Inténtalo más tarde.</string>
+    <string name="settings_section_account">Cuenta</string>
+    <string name="settings_sessions_title">Dónde has iniciado sesión</string>
+    <string name="settings_sessions_subtitle">Sesiones activas en tus dispositivos. Cierra las que no reconozcas.</string>
+    <string name="settings_sessions_current">Este dispositivo</string>
+    <string name="settings_sessions_last_seen">Última actividad: %1$s</string>
+    <string name="settings_sessions_revoke">Cerrar sesión</string>
+    <string name="settings_sessions_revoke_failed">No se pudo cerrar la sesión</string>
+    <string name="settings_sessions_empty">Aún no hay sesiones activas. Vuelve a iniciar sesión para ver este dispositivo.</string>
+    <string name="settings_sessions_load_failed">No se pudo cargar la lista de sesiones</string>
+    <string name="settings_sessions_unknown_device">Dispositivo desconocido</string>
+    <string name="settings_account_signed_out">Sin autorizar</string>
+    <string name="auth_terms_line1">Al iniciar sesión, aceptas los</string>
+    <string name="auth_terms_link">términos del servicio</string>
+    <string name="auth_privacy_link">política de privacidad</string>
+    <string name="auth_error_network">No se pudo conectar con el servidor. Comprueba tu conexión y que el puerto de la API esté abierto (a menudo 8080 o HTTPS en 443).</string>
+    <string name="auth_error_ssl">Error HTTPS (certificado). Para tu propio servidor usa http://…:8080 o corrige SSL.</string>
+    <string name="auth_error_credentials">Usuario o contraseña incorrectos</string>
+    <string name="auth_error_email_taken">Este correo ya está registrado</string>
+    <string name="auth_error_login_taken">Este usuario ya está en uso</string>
+    <string name="auth_error_invalid_login">Usuario: 3–32 caracteres, letras, números y _</string>
+    <string name="auth_error_weak_password">La contraseña es demasiado corta (mínimo 8 caracteres)</string>
+    <string name="auth_error_generic">Algo salió mal. Inténtalo de nuevo.</string>
+    <string name="auth_error_invalid_code">Código incorrecto</string>
+    <string name="auth_error_code_expired">El código ha caducado. Solicita uno nuevo.</string>
+    <string name="auth_error_rate_limited">Espera un minuto antes de reenviar</string>
+    <string name="auth_code_sent">Código enviado a tu correo</string>
+    <string name="auth_verify_title">Verificación</string>
+    <string name="auth_verify_subtitle">Introduce el código de 6 dígitos que enviamos a %1$s</string>
+    <string name="auth_verify_confirm">Confirmar</string>
+    <string name="auth_verify_resend">Reenviar código</string>
+    <string name="auth_verify_back">Cambiar usuario, correo o contraseña</string>
+    <string name="auth_continue_register">Continuar</string>
+
+
+    <string name="post_register_message">¡Bienvenido!</string>
+
+
+    <string name="onboarding_hero_headline">Tus datos te pertenecen.</string>
+    <string name="onboarding_rich_part1">Essential guarda las notas en tu dispositivo para que puedas trabajar con ellas de forma rápida y privada</string>
+    <string name="onboarding_rich_offline">\u0020incluso sin conexión</string>
+    <string name="onboarding_rich_part2">. Tus archivos están en una carpeta local protegida llamada</string>
+    <string name="onboarding_rich_vault">\u0020almacén</string>
+    <string name="onboarding_rich_suffix">.</string>
+    <string name="onboarding_choose_folder">Elegir carpeta del almacén</string>
+    <string name="onboarding_create_vault">Crear un almacén nuevo</string>
+    <string name="onboarding_use_existing">Usar existente</string>
+
+
+    <string name="create_vault_headline">Elige un nombre para tu almacén</string>
+    <string name="create_vault_name_label">Nombre del almacén</string>
+    <string name="create_vault_location_section">Ubicación del almacén</string>
+    <string name="create_vault_storage_device_title">Almacenamiento del dispositivo</string>
+    <string name="create_vault_storage_device_hint">• Permite que otras apps accedan a los datos de Essential.</string>
+    <string name="create_vault_storage_app_title">Almacenamiento de la app</string>
+    <string name="create_vault_storage_app_hint">• Al desinstalar Essential se eliminarán todos los datos.</string>
+    <string name="create_vault_submit">Crear almacén</string>
+    <string name="create_vault_error_exists">Ya existe un almacén con este nombre. Elige otro.</string>
+
+
+    <string name="home_ask_essential_hint">Pregunta a Essential…</string>
+    <string name="empty_usage_label">Actividad</string>
+    <string name="empty_usage_period">30 días</string>
+    <string name="empty_chat_continue_label">Continuar</string>
+    <string name="empty_chat_last_note_label">Última nota</string>
+    <string-array name="home_empty_chat_quick_prompts">
+        <item>Resume mis notas</item>
+        <item>Planifica mi día</item>
+        <item>¿De qué escribí últimamente?</item>
+        <item>Encuentra enlaces entre notas</item>
+        <item>Ayúdame a formar una idea</item>
+        <item>¿Qué importa en mi vault?</item>
+    </string-array>
+    <string-array name="home_empty_chat_prompts_morning">
+        <item>Buenos días. ¿De qué hablamos?</item>
+        <item>¿Por dónde empezamos la mañana?</item>
+        <item>La mañana es buena para las ideas</item>
+        <item>¿Qué tienes en mente hoy?</item>
+    </string-array>
+    <string-array name="home_empty_chat_prompts_day">
+        <item>¿Qué hacemos hoy?</item>
+        <item>¿Qué tienes en la agenda?</item>
+        <item>¿Cómo va tu día?</item>
+        <item>¿En qué puedo ayudarte hoy?</item>
+    </string-array>
+    <string-array name="home_empty_chat_prompts_evening">
+        <item>Buenas tardes. ¿Qué tienes en mente?</item>
+        <item>¿Cómo ha ido el día?</item>
+        <item>La tarde es para cerrar cosas</item>
+        <item>¿De qué hablamos esta noche?</item>
+    </string-array>
+    <string-array name="home_empty_chat_prompts_night">
+        <item>Noche tranquila—¿en qué pensamos?</item>
+        <item>¿Qué te ronda la cabeza esta noche?</item>
+    </string-array>
+    <string name="cd_attach">Adjunto</string>
+    <string name="cd_attach_note">Adjuntar nota</string>
+    <string name="cd_voice_input">Entrada por voz</string>
+    <string name="cd_close">Cerrar</string>
+    <string name="chat_add_to_chat">Añadir al chat</string>
+    <string name="chat_add_camera">Cámara</string>
+    <string name="chat_add_photos">Fotos</string>
+    <string name="chat_add_files">Archivos</string>
+    <string name="chat_pick_note">Adjuntar nota</string>
+    <string name="chat_pick_model">Modelo</string>
+    <string name="chat_pick_model_device_hint">Memoria del dispositivo: %1$d MB · recomendamos una opción óptima</string>
+    <string name="chat_models_cloud">Nube</string>
+    <string name="chat_models_local">Local</string>
+    <string name="chat_model_recommended">Recomendado</string>
+    <string name="chat_model_download">Descargar</string>
+    <string name="chat_model_download_progress">%1$s de %2$s</string>
+    <string name="chat_model_downloading">Descargando modelo…</string>
+    <string name="chat_model_download_done">Modelo descargado</string>
+    <string name="chat_model_download_failed">Error al descargar: %1$s</string>
+    <string name="chat_model_download_wifi">Se requiere Wi‑Fi para descargar</string>
+    <string name="chat_model_download_storage">Espacio insuficiente</string>
+    <string name="chat_model_download_paused">Descarga en pausa</string>
+    <string name="chat_model_download_pause">Pausar</string>
+    <string name="chat_model_download_resume">Reanudar</string>
+    <string name="chat_model_download_cancel">Cancelar</string>
+    <string name="chat_model_download_channel">Descarga de modelos</string>
+    <string name="chat_model_download_channel_desc">Descarga en segundo plano de modelos locales</string>
+    <string name="chat_model_download_notification">Descargando %1$s</string>
+    <string name="chat_model_download_paused_notification">%1$s — en pausa</string>
+    <string name="chat_model_delete">Eliminar</string>
+    <string name="chat_model_delete_confirm_title">¿Eliminar modelo?</string>
+    <string name="chat_model_delete_confirm_body">El archivo %1$s se eliminará del dispositivo.</string>
+    <string name="chat_model_delete_done">Modelo eliminado</string>
+    <string name="chat_model_incomplete_removed">Descarga incompleta eliminada: %1$s</string>
+    <string name="chat_pick_note_empty">Aún no hay notas—crea una desde el menú</string>
+    <string name="cd_open_menu">Abrir menú del almacén</string>
+    <string name="cd_open_models">Elegir modelo local</string>
+    <string name="home_drawer_new_note">Nota nueva</string>
+    <string name="home_drawer_no_files">Sin archivos</string>
+    <string name="home_model_label">Modelo</string>
+    <string name="home_local_model_section">Modelo local</string>
+    <string name="home_local_model_url_hint">Enlace del modelo (.litertlm)</string>
+    <string name="home_gguf_section">@string/home_local_model_section</string>
+    <string name="home_gguf_url_hint">@string/home_local_model_url_hint</string>
+    <string name="home_gguf_download">Descargar</string>
+    <string name="home_gguf_url_empty">Pega la URL del modelo</string>
+    <string name="home_gguf_download_ok">Modelo guardado y seleccionado</string>
+    <string name="home_gguf_download_fail">Error al descargar</string>
+    <string name="home_gguf_none">Ninguno seleccionado</string>
+    <string name="home_gguf_no_files">Lista vacía—elige un preset arriba o pega un enlace</string>
+    <string name="home_gguf_selected">Modelo seleccionado</string>
+    <string name="home_gguf_integrity_fail">Comprobación de integridad fallida: %1$s</string>
+
+
+    <string name="notes_title">Notas</string>
+    <string name="notes_reindex">Reindexar</string>
+    <string name="notes_chat">Chat</string>
+    <string name="notes_settings">Ajustes</string>
+
+
+    <string name="editor_placeholder">Markdown</string>
+    <string name="editor_default_title">Nota</string>
+    <string name="editor_preview">Vista previa</string>
+    <string name="editor_edit">Editar</string>
+    <string name="editor_save_failed">No se pudo guardar la nota (sin acceso al archivo o error de almacenamiento)</string>
+    <string name="editor_toast_open_system_folder_picker">Sin acceso persistente a la carpeta del almacén. En el diálogo del sistema, elige la misma carpeta que tus notas—Android restaurará el permiso.</string>
+    <string name="editor_toast_grant_folder_on_save">Se necesita acceso a la carpeta. Elige la misma carpeta del almacén—el guardado se repetirá automáticamente.</string>
+    <string name="editor_toast_vault_access_saved">Acceso a la carpeta actualizado</string>
+    <string name="editor_toast_still_no_access">No se restauró el acceso. Selecciona la carpeta que contiene esta nota.</string>
+    <string name="cd_back">Atrás</string>
+
+
+    <string name="chat_title">Chat</string>
+    <string name="chat_mode_local">Local</string>
+    <string name="chat_mode_cloud">Nube</string>
+    <string name="chat_hint_cloud">En modo nube, el contexto del almacén seleccionado se envía a tu servidor y al proveedor de IA.</string>
+    <string name="chat_hint_cloud_openai">Endpoint compatible con OpenAI (Timeweb Agent, etc.): configura la URL base con /v1 y la clave API en ajustes. No subas secretos al repositorio.</string>
+    <string name="chat_hint_cloud_gemini">Google Gemini: clave de AI Studio en ajustes. Las solicitudes van a generativelanguage.googleapis.com.</string>
+    <string name="chat_hint_local">Modo local: respuestas en el dispositivo con LiteRT-LM (Google). Descarga un modelo de la lista arriba a la derecha.</string>
+    <string name="chat_message_placeholder">Mensaje</string>
+    <string name="chat_send">Enviar</string>
+    <string name="chat_copy">Copiar</string>
+    <string name="chat_history_title">Chats</string>
+    <string name="chat_history_new">Nuevo</string>
+    <string name="chat_history_empty">Sin historial aún—inicia un chat nuevo.</string>
+    <string name="chat_history_save_note">Guardar chat como nota</string>
+    <string name="chat_history_delete">Eliminar chat</string>
+    <string name="chat_share">Compartir</string>
+    <string name="cd_share">Compartir</string>
+    <string name="cd_copy">Copiar respuesta</string>
+    <string name="chat_copied">Copiado</string>
+    <string name="code_copied">Código copiado</string>
+    <string name="cd_copy_code">Copiar código</string>
+    <string name="chat_error_setup">Configura la URL de la API e inicia sesión en ajustes.</string>
+    <string name="chat_error_setup_openai">Configura la URL base y la clave API de tu proveedor compatible con OpenAI en ajustes.</string>
+    <string name="chat_error_setup_gemini">Configura tu clave de Gemini (AI Studio) en ajustes.</string>
+    <string name="chat_error_cloud">Error en la nube: %1$s</string>
+    <string name="chat_error_quota_exhausted">Has superado el límite de tokens del modelo de IA en la nube. Instala un modelo local desde el selector de modelos: no tiene límite de tokens.</string>
+    <string name="chat_error_cloud_ai_disabled">La IA en la nube no está disponible en el servidor. Instala un modelo local o inténtalo más tarde.</string>
+    <string name="chat_error_generic">No se pudo obtener una respuesta. Comprueba la red y la configuración.</string>
+    <string name="chat_error_offline_cloud">Sin conexión de red. El modo en la nube no está disponible — cambia a un modelo local.</string>
+    <string name="chat_offline_cloud_hint">Sin red — solo modo local</string>
+    <string name="chat_error_server">El servidor Essential AI no está disponible. Inténtalo más tarde o instala un modelo local.</string>
+    <string name="chat_error_ai_provider">El modelo en la nube no respondió. Reintenta o instala una IA local sin límites.</string>
+    <string name="chat_role_user">Usuario</string>
+    <string name="chat_role_assistant">Asistente</string>
+
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_api_url">URL de la API</string>
+    <string name="settings_save_api">Guardar URL</string>
+    <string name="settings_toast_api_saved">URL guardada</string>
+    <string name="settings_email">Correo electrónico</string>
+    <string name="settings_password">Contraseña</string>
+    <string name="settings_login">Iniciar sesión</string>
+    <string name="settings_toast_login_ok">Sesión iniciada</string>
+    <string name="settings_toast_login_fail">Error al iniciar sesión</string>
+    <string name="settings_cloud_none">Nube: no has iniciado sesión</string>
+    <string name="settings_cloud_ok">Nube: token guardado en el dispositivo</string>
+    <string name="settings_passphrase">Frase de instantáneas (E2EE)</string>
+    <string name="settings_save_passphrase">Guardar frase</string>
+    <string name="settings_toast_passphrase_saved">Frase guardada localmente</string>
+    <string name="settings_upload_snapshot">Subir instantánea cifrada</string>
+    <string name="settings_restore_snapshot">Restaurar la última instantánea</string>
+    <string name="settings_toast_pick_vault">Primero elige un almacén</string>
+    <string name="settings_toast_login_first">Primero inicia sesión</string>
+    <string name="settings_toast_passphrase_required">Se necesita la frase de cifrado</string>
+    <string name="settings_toast_upload_ok">Instantánea subida</string>
+    <string name="settings_toast_upload_fail">Error al subir: %1$s</string>
+    <string name="settings_toast_restore_ok">Restauración completada</string>
+    <string name="settings_toast_restore_fail">Error al restaurar: %1$s</string>
+    <string name="settings_restore_hint">Sobrescribe archivos coincidentes en la raíz del almacén</string>
+    <string name="settings_logout">Cerrar sesión</string>
+    <string name="settings_toast_logout">Sesión cerrada</string>
+    <string name="settings_cloud_llm_section">Chat en la nube (no API Essential)</string>
+    <string name="settings_cloud_provider_essential">Servidor Essential</string>
+    <string name="settings_cloud_provider_openai">Compatible con OpenAI</string>
+    <string name="settings_cloud_provider_gemini">Google Gemini</string>
+    <string name="settings_openai_base">URL base (…/v1)</string>
+    <string name="settings_openai_base_hint">Timeweb Agent: URL hasta /v1, p. ej. …/agents/ID/v1. Puedes definir OPENAI_COMPAT_BASE_URL en local.properties.</string>
+    <string name="settings_openai_key">Clave API (Bearer)</string>
+    <string name="settings_openai_key_hint">JWT de Timeweb: pégala aquí o en local.properties: OPENAI_COMPAT_API_KEY=…</string>
+    <string name="settings_openai_model">Nombre del modelo</string>
+    <string name="settings_gemini_key">Clave Gemini (AI Studio)</string>
+    <string name="settings_gemini_key_hint">Google Gemini requiere una clave de AI Studio. Opcional: GEMINI_API_KEY en la raíz del proyecto en local.properties (no se hace commit). Las cadenas JWT de otros proveedores no van aquí—usa el modo compatible con OpenAI.</string>
+    <string name="settings_gemini_model">Modelo Gemini</string>
+    <string name="settings_save_cloud_llm">Guardar IA en la nube</string>
+    <string name="settings_toast_cloud_llm_saved">Ajustes de IA en la nube guardados</string>
+    <string name="settings_local_llm_section">Modelo local (LiteRT-LM)</string>
+    <string name="settings_llm_temperature">Temperature</string>
+    <string name="settings_llm_top_p">Top P</string>
+    <string name="settings_llm_max_tokens">Max tokens</string>
+    <string name="settings_llm_context">Tamaño de contexto</string>
+    <string name="settings_llm_threads">Hilos de CPU</string>
+    <string name="settings_llm_compute_backend">Aceleración del modelo</string>
+    <string name="settings_llm_compute_gpu">GPU (OpenCL)</string>
+    <string name="settings_llm_compute_cpu">CPU</string>
+    <string name="settings_llm_compute_cpu_only_build">CPU</string>
+    <string name="settings_llm_compute_cpu_only_build_hint">La GPU está integrada en LiteRT-LM. Si no está disponible, la app pasa a CPU automáticamente.</string>
+    <string name="settings_llm_compute_gpu_available">GPU disponible en este dispositivo</string>
+    <string name="settings_llm_compute_gpu_unavailable">GPU no disponible — se usa CPU</string>
+    <string name="settings_llm_compute_gpu_device">GPU: %1$s</string>
+    <string name="settings_local_web_research">Búsqueda web para modelo local</string>
+    <string name="settings_local_web_research_hint">Obtiene contexto web antes de responder (clima, búsqueda). El modelo sigue en el dispositivo. Activado por defecto.</string>
+    <string name="settings_local_web_research_endpoint">URL de búsqueda</string>
+    <string name="settings_local_web_research_endpoint_default">DuckDuckGo (predeterminado)</string>
+    <string name="settings_local_web_research_endpoint_hint">La URL debe contener {query}. Compatible con DuckDuckGo, SearXNG y otras APIs JSON.</string>
+    <string name="settings_local_web_research_endpoint_dialog_hint">Ejemplo: https://search.example.com/search?q={query}&amp;format=json</string>
+    <string name="settings_save_llm_params">Guardar parámetros del modelo</string>
+    <string name="settings_toast_llm_params_saved">Parámetros guardados</string>
+    <string name="settings_toast_llm_params_invalid">Comprueba los números (temperature, top P, …)</string>
+
+    <string name="settings_privacy_section">Privacidad y soporte</string>
+    <string name="settings_privacy_policy_link">Política de privacidad</string>
+    <string name="settings_terms_link">Términos del servicio</string>
+    <string name="settings_support_title">Contacto</string>
+    <string name="settings_local_model_cellular">Descargar modelos con datos móviles</string>
+    <string name="settings_local_model_cellular_hint">Permitir descargas de modelos locales por red móvil</string>
+    <string name="settings_gguf_cellular">@string/settings_local_model_cellular</string>
+    <string name="settings_gguf_cellular_hint">@string/settings_local_model_cellular_hint</string>
+
+    <string name="settings_section_reading">Lectura</string>
+    <string name="settings_section_chat">Chat e IA</string>
+    <string name="settings_section_appearance">Apariencia</string>
+    <string name="settings_preview_label">Vista previa</string>
+    <string name="settings_font_label">Fuente</string>
+    <string name="settings_font_size">Tamaño de fuente</string>
+    <string name="settings_font_weight">Peso</string>
+    <string name="settings_stream_replies">Respuestas en streaming</string>
+    <string name="settings_stream_replies_hint">El texto aparece mientras el modelo genera</string>
+    <string name="settings_chat_haptics">Retroalimentación háptica</string>
+    <string name="settings_chat_haptics_hint">Vibración al enviar un mensaje y al terminar la respuesta</string>
+    <string name="settings_typewriter">Efecto máquina de escribir</string>
+    <string name="settings_typewriter_hint">Animación suave para respuestas que llegan de golpe</string>
+    <string name="settings_semantic_search">Búsqueda semántica</string>
+    <string name="settings_semantic_search_hint">Buscar notas relevantes del almacén para el contexto del chat</string>
+    <string name="settings_auto_title_chats">Títulos automáticos en chats</string>
+    <string name="settings_auto_title_chats_hint">La IA sugiere un título para el primer mensaje</string>
+    <string name="settings_compress_images">Comprimir fotos</string>
+    <string name="settings_compress_images_hint">Adjuntos más pequeños en el chat</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_system">Sistema</string>
+    <string name="settings_theme_dark">Oscuro</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="settings_dynamic_color">Material You</string>
+    <string name="settings_dynamic_color_hint">Colores del fondo de pantalla (Android 12+)</string>
+
+    <string name="editor_backlinks_title">Enlaces a esta nota</string>
+    <string name="editor_backlinks_empty">Aún no hay enlaces entrantes</string>
+    <string name="editor_delete">Eliminar nota</string>
+    <string name="editor_delete_confirm_title">¿Eliminar nota?</string>
+    <string name="editor_delete_confirm_body">El archivo «%1$s» se eliminará de forma permanente.</string>
+    <string name="editor_delete_confirm">Eliminar</string>
+    <string name="editor_delete_cancel">Cancelar</string>
+    <string name="editor_delete_failed">No se pudo eliminar la nota</string>
+
+
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_hint">Idioma de la interfaz</string>
+    <string name="lang_system">Según el sistema</string>
+    <string name="lang_english">English</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_spanish">Español</string>
+    <string name="thinking_label">Pensando…</string>
+    <string name="local_gen_loading">cargando…</string>
+    <string name="local_gen_weights_loading">pesos…</string>
+    <string name="local_gen_prefill">prompt…</string>
+
+    <string name="note_untitled">Sin título</string>
+    <string name="chat_title_new">Nuevo chat</string>
+    <string name="chat_title_default">Chat</string>
+    <string name="cd_remove_note">Quitar nota</string>
+    <string name="cd_new_chat">Nuevo chat</string>
+    <string name="chat_model_cloud_subtitle">Asistente en la nube</string>
+    <string name="chat_model_cloud_subtitle_long">Asistente en la nube (servidor Essential)</string>
+    <string name="chat_model_local_subtitle">En el dispositivo · %1$s</string>
+    <string name="chat_model_local_gguf_subtitle">@string/chat_model_local_subtitle</string>
+    <string name="vault_error_unavailable">Almacén no disponible — vuelve a abrir la carpeta en ajustes</string>
+    <string name="vault_error_no_write">Sin permiso de escritura — vuelve a abrir la carpeta</string>
+    <string name="drawer_rename_note_title">Renombrar nota</string>
+    <string name="drawer_rename_field_label">Nombre del archivo</string>
+    <string name="menu_rename">Renombrar</string>
+    <string name="action_save">Guardar</string>
+    <string name="toast_save_failed">No se pudo guardar</string>
+    <string name="toast_chat_saved_as_note">Chat guardado como nota</string>
+    <string name="speech_recognition_prompt">Habla…</string>
+    <string name="chat_empty_model_response">Respuesta vacía del modelo (filtros de seguridad o error de red).</string>
+    <string name="chat_model_delete_file_failed">no se pudo eliminar el archivo</string>
+
+<string name="graph_stats_subtitle">%1$d nodos · %2$d enlaces · %3$d clústeres</string>
+    <string name="graph_no_wiki_notes">No hay notas con enlaces [[…]]</string>
+    <string name="cd_clear">Borrar</string>
+    <string name="cd_rebuild">Reconstruir</string>
+    <string name="cd_send">Enviar</string>
+    <string name="cd_hide">Ocultar</string>
+    <string name="editor_format_bold">Negrita</string>
+    <string name="editor_format_italic">Cursiva</string>
+    <string name="editor_format_heading">Título</string>
+    <string name="editor_format_code">Código</string>
+    <string name="editor_format_list">Lista</string>
+    <string name="editor_format_task">Tareas</string>
+    <string name="sheet_action_apply">Aplicar</string>
+    <string name="note_sources_short">Fuentes</string>
+    <string name="suggestion_changes_for">Cambios para «%1$s»</string>
+    <string name="action_append_to_end">Al final</string>
+    <string name="editor_toast_saved_rename_failed">Texto guardado, pero no se pudo renombrar: %1$s</string>
+    <string name="sheet_files_question">¿Qué hay en estos archivos?</string>
+    <string name="cd_search">Buscar</string>
+    <string name="graph_focus">Enfoque</string>
+    <string name="graph_reset_focus">Restablecer</string>
+    <string name="graph_is_empty">El grafo está vacío</string>
+    <string name="chat_error_no_response">sin respuesta</string>
+    <string name="sheet_api_key_note_chat">Clave API no configurada (Ajustes → Chat e IA).</string>
+    <string-array name="thinking_phrases">
+        <item>Hojeando notas…</item>
+        <item>Reuniendo contexto…</item>
+        <item>Conectando ideas…</item>
+        <item>Buscando en el vault…</item>
+        <item>Leyendo entre líneas…</item>
+        <item>Eligiendo palabras…</item>
+        <item>Comprobando datos…</item>
+        <item>Armando la respuesta…</item>
+        <item>Girando engranajes…</item>
+        <item>Un momento más…</item>
+    </string-array>
+    <string name="drawer_settings">Ajustes</string>
+    <string name="toast_attach_failed">No se pudo adjuntar: %1$s</string>
+    <string name="toast_speech_unavailable">Entrada por voz no disponible en este dispositivo</string>
+    <string name="toast_note_updated">Nota actualizada</string>
+    <string name="toast_note_save_failed">No se pudo guardar la nota</string>
+    <string name="toast_note_appended">Cambios añadidos a la nota</string>
+    <string name="action_open_created_note">Abrir nota creada</string>
+    <string name="chat_sources_label">Fuentes</string>
+    <string name="chat_note_created_chip">Nota creada</string>
+    <string name="chat_note_created_chip_named">Nota creada · %1$s</string>
+    <string name="toast_renamed">Renombrado</string>
+    <string name="toast_deleted">Eliminado</string>
+    <string name="toast_delete_failed">No se pudo eliminar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="note_sources_title">Fuentes de notas</string>
+    <string name="suggestion_create_note">Crear nota: %1$s</string>
+    <string name="suggestion_create_note_action">Crear nota</string>
+    <string name="suggestion_edit_for">Editar para %1$s</string>
+    <string name="action_replace">Reemplazar</string>
+    <string name="action_append">Añadir</string>
+    <string name="action_open">Abrir</string>
+    <string name="time_just_now">Ahora mismo</string>
+    <string name="time_minutes_ago">Hace %1$d min</string>
+    <string name="time_hours_ago">Hace %1$d h</string>
+    <string name="time_days_ago">Hace %1$d d</string>
+    <string name="toast_rename_save_failed">No se pudo guardar el nuevo nombre: %1$s</string>
+    <string name="sheet_note_chat_hint">Pregunta sobre esta nota…</string>
+    <string name="sheet_loading">Cargando…</string>
+    <string name="sheet_input_hint">Mensaje</string>
+    <string name="sheet_api_key_missing">Indica la clave API en ajustes</string>
+    <string name="sheet_error_generic">Algo salió mal</string>
+    <string name="sheet_empty_response">Respuesta del modelo vacía</string>
+    <string name="sheet_apply_edits_user">Aplicar ediciones (usuario)</string>
+    <string name="toast_camera_unavailable">Cámara no disponible</string>
+    <string name="graph_title">Grafo de notas</string>
+    <string name="graph_search_hint">Buscar nodo…</string>
+    <string name="graph_building">Construyendo grafo…</string>
+    <string name="graph_neighbors">Vecinos: %1$d</string>
+    <string name="graph_empty_toast">No hay datos suficientes para el grafo</string>
+    <string name="graph_share_title">Compartir grafo</string>
+    <string name="llm_pick_model_hint">Elige un modelo en la nube o local</string>
+    <string name="llm_model_not_found">Modelo no encontrado: %1$s</string>
+    <string name="llm_native_unavailable_prefix">Motor nativo no disponible: </string>
+    <string name="llm_no_vault_notes">No hay notas en el almacén: %1$s</string>
+    <string name="llm_no_matches">Sin coincidencias: %1$s</string>
+    <string name="llm_local_summary_header">Modelo local · resumen</string>
+    <string name="note_created_toast">Nota «%1$s» creada</string>
+    <string name="toast_rename_failed">No se pudo renombrar</string>
+    <string name="toast_create_note_failed">No se pudo crear la nota</string>
+    <string name="llm_choose_model_hint">Elige un modelo con el icono del vault arriba a la derecha.</string>
+    <string name="llm_stub_no_vault">El modelo local no está conectado y no hay notas para «%1$s». Crea notas o elige un modelo en la nube arriba a la derecha.</string>
+    <string name="llm_stub_empty_search">No se encontró nada en el vault para «%1$s».</string>
+    <string name="llm_stub_no_match">Sin coincidencias para «%1$s» en el vault.\n\nPrueba con más detalle o usa un modelo en la nube (icono del vault arriba a la derecha).</string>
+    <string name="llm_stub_from_notes">Según tus notas:</string>
+    <string name="llm_stub_note_fallback">Nota %1$d</string>
+    <string name="llm_stub_footer">(Búsqueda local sin LLM. Para una respuesta completa, usa un modelo en la nube arriba a la derecha.)</string>
+
+    <string name="sheet_note_chat_examples">Pregunta sobre esta nota. Por ejemplo: «Acórtalo», «Añade una sección sobre…», «¿Qué falla aquí?»</string>
+    <string name="sheet_error_with_message">Error: %1$s</string>
+    <string name="settings_preview_sample">Essential te ayuda a pensar con claridad. Una buena tipografía facilita leer notas largas — elige la fuente y el tamaño que te resulten cómodos.</string>
+    <string name="llm_native_search_fallback">LiteRT-LM no está disponible — se usa búsqueda local en notas. Descarga un modelo de la lista para respuestas offline completas.\n\n</string>
+    <string name="llm_model_not_found_detail">Modelo «%1$s» no encontrado. Descárgalo de la lista o actualiza la selección.</string>
+
+    <string name="default_api_base">https://myessentiality.ru</string>
+    <string name="privacy_policy_url">https://telegra.ph/Politika-konfidencialnosti-04-01-26</string>
+    <string name="terms_url">https://telegra.ph/Polzovatelskoe-soglashenie-04-01-19</string>
+    <string name="support_email">EssentialityDev@yandex.com</string>
+</resources>
+
+

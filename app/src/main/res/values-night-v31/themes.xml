@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Essential" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/essential_window_bg</item>
+        <item name="android:statusBarColor">@color/essential_window_bg</item>
+        <item name="android:navigationBarColor">@color/essential_window_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowSplashScreenBackground">@color/essential_window_bg</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@android:color/transparent</item>
+        <item name="android:autofilledHighlight">@android:color/transparent</item>
+    </style>
+</resources>
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="drawer_notes_count">
+        <item quantity="one">%d nota</item>
+        <item quantity="other">%d notas</item>
+    </plurals>
+</resources>
+
+
