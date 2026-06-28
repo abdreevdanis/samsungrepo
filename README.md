@@ -35,15 +35,14 @@ Essential предназначен для пользователей, котор
 
 | Режим | Когда используется |
 |-------|-------------------|
-| **Локальный** | Нет облачного режима, нет вложений - LiteRT-LM и/или llama.cpp (GGUF через JNI) |
+| **Локальный** | Нет облачного режима, нет вложений — LiteRT-LM на устройстве |
 | **Essential API** | Авторизация на `https://myessentiality.ru`, квоты Free/Pro |
 | **OpenAI-compatible / Gemini** | Debug-сборка с ключами в `local.properties` |
 
-Локальный стек:
+Локальный режим:
 
-- **LiteRT-LM** - модели `.litertlm`, GPU/CPU backend, streaming (`LiteRtLmRunner`, `HybridLocalLlmEngine`).
-- **llama.cpp (NDK/JNI)** - GGUF-модели, native-библиотека `libessential_llama.so`.
-- **LocalWebResearch** - опциональный веб-контекст для локального режима при наличии сети.
+- **LiteRT-LM** — модели `.litertlm`, GPU/CPU backend, streaming (`LiteRtLmRunner`, `HybridLocalLlmEngine`).
+- **LocalWebResearch** — опциональный веб-контекст при наличии сети.
 
 Облачный режим проверяет online-статус через `OnlineChecker` / `NetworkMonitor`.
 
@@ -69,7 +68,7 @@ app/src/main/java/com/rassvet/essential/
 |  |- api/           - EssentialApi, JWT, OpenAI/Gemini, streaming
 |  |- chat/          - ChatEngine, экспорт, вложения, маршрутизация LLM
 |  |- index/         - IndexRepository, SemanticIndex (TF-IDF)
-|  |- llm/           - LiteRT-LM, llama.cpp, каталог моделей, загрузка GGUF
+|  |- llm/           - LiteRT-LM, каталог и загрузка моделей
 |  |- local/         - Room (AppDatabase, DAO, FTS5/FTS4, миграции)
 |  |- network/       - NetworkMonitor, OnlineChecker
 |  |- notes/         - NotesRepository
@@ -96,8 +95,6 @@ app/src/main/java/com/rassvet/essential/
 |- EssentialApplication.kt, MainActivity.kt, EssentialApp.kt
 ```
 
-Native-код: `app/src/main/cpp/` - CMake, llama.cpp, JNI `essential_jni.cpp`.
-
 ## Используемый стек технологий
 
 | Категория | Технологии |
@@ -107,7 +104,7 @@ Native-код: `app/src/main/cpp/` - CMake, llama.cpp, JNI `essential_jni.cpp`.
 | СУБД | Room (SQLite), FTS5/FTS4 |
 | DI | Dagger Hilt |
 | Сеть | OkHttp, REST (`EssentialApi`) |
-| ИИ (локально) | LiteRT-LM, llama.cpp (GGUF, NDK 27) |
+| ИИ (локально) | LiteRT-LM |
 | ИИ (облако) | REST API Essential, OpenAI-compatible, Gemini |
 | Настройки | DataStore Preferences |
 | Шифрование | AES-256-GCM, PBKDF2 |
@@ -117,8 +114,6 @@ Native-код: `app/src/main/cpp/` - CMake, llama.cpp, JNI `essential_jni.cpp`.
 
 - **JDK 17+**
 - **Android SDK 36** (minSdk **24**, targetSdk **36**)
-- **NDK 27.x**
-- **CMake 3.22+**
 
 Опционально для debug с прямым облаком - ключи в `local.properties` (не коммитить):
 
@@ -197,13 +192,8 @@ Debug-сборка без сервера: логин `admin`, пароль `admi
 | `data/chat/ChatAttachmentJsonTest.kt` | сериализация вложений |
 | `data/api/JwtPayloadTest.kt` | разбор JWT |
 | `data/api/ApiBaseUrlsTest.kt` | URL API |
-| `data/llm/LlamaRuntimeTuningTest.kt` | параметры llama.cpp |
+| `data/llm/LlamaRuntimeTuningTest.kt` | параметры локального LLM runtime |
 | `data/llm/LocalWebResearchTest.kt` | локальный веб-контекст |
 | `ui/markdown/MarkdownParserTest.kt` | разбор markdown |
 | `locale/RelativeTimeTest.kt` | относительное время |
 | `data/chat/ChatDeviceClockTest.kt` | время устройства |
-
-## Контакты
-
-- https://myessentiality.ru
-- https://github.com/abdreevdanis/samsung
