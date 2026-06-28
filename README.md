@@ -3,7 +3,6 @@
 Android-приложение для личных markdown-заметок и ИИ-чата с контекстом из ваших материалов.
 
 **Автор:** Абдреев Данис Ринатович  
-**Конкурс:** IT Школа Samsung — финал 2026, номинация «Программирование»  
 **Версия:** 1.4.0 (versionCode 11)  
 **Package:** `ru.myessentiality.essential`
 
@@ -120,7 +119,7 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 
 Windows: `gradlew.bat :app:assembleDebug`
 
-APK для жюри: [Releases](https://github.com/abdreevdanis/samsung/releases) — **v1.4.0**.
+APK приложения: [Releases](https://github.com/abdreevdanis/samsungrepo/releases/tag/v1.4.0) — **v1.4.0**.
 
 ## Сервер и тестовый вход
 
