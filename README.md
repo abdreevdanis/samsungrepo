@@ -111,7 +111,7 @@ app/src/main/java/com/rassvet/essential/
 ## Сборка и установка
 
 ```bash
-git clone https://github.com/abdreevdanis/samsung.git
+git clone https://github.com/abdreevdanis/samsungrepo.git
 cd samsung
 ./gradlew :app:assembleDebug
 adb install app/build/outputs/apk/debug/app-debug.apk
